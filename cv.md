@@ -5,7 +5,8 @@
 Phone number: +375445876563  
 3. 
 Hi! My name is **Vladislav Akulich**. I am 19 years old and now I am a student of rs-school.  
-At the same time student of BSUIR and I  really want to know HTML, CSS and Javascript.  
+At the same time student of BSUIR and I  really want to know HTML, CSS and Javascript.
+
 4.
 - CSS
 - JavaScript
