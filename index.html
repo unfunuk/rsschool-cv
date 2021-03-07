@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Resume CV Design</title>
+    <meta charset="utf-8">
+    <title>CV</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+        @font-face {
+            font-family: 'Akaya Kanadaka', cursive;
+            src: url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+        }
 
         * {
             margin: 0;
@@ -20,29 +23,32 @@
         }
 
         .resume {
+
             width: 850px;
             background: rgb(252, 252, 252);
             margin: auto;
             display: flex;
         }
 
-        .left {
+        header {
+
             background: #000000;
             width: 270px;
             padding: 5px 20px;
         }
 
         .right {
+
             width: calc(100% - 270px);
         }
 
-        .left .img_holder {
+        header .img_holder {
             text-align: center;
             padding: 20px 5px;
         }
 
-        .left .img_holder img {
-            width: 150px;
+        header .img_holder img {
+            width: 170px;
             border-radius: 20px;
         }
 
@@ -50,45 +56,45 @@
             padding-bottom: 20px;
         }
 
-        .title {
+        h2 {
             font-size: 28px;
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 10px;
             padding-bottom: 10px;
-            color: #f73131;
+            color: #ff0000;
             position: relative;
             text-align: right;
             margin-bottom: 15px;
         }
 
-        .title:before {
+        h2:before {
             content: "";
             position: absolute;
-            top: 35px;
+            top: 40px;
             right: 0;
             width: 70px;
             height: 3px;
-            background: #f73131;
+            background: #ff0000;
         }
 
-        .left .icon {
+        header .icon {
             font-size: 20px;
         }
 
-        .left .text {
+        header .text {
             text-transform: uppercase;
             font-size: 13px;
         }
 
-        .contact .li_wrap {
+        address .li_wrap {
             display: flex;
             align-items: center;
             width: 100%;
             margin-bottom: 10px;
         }
 
-        .contact .li_wrap .icon {
+        address .li_wrap .icon {
             width: 25px;
             height: 25px;
             background: #fff;
@@ -98,9 +104,8 @@
             margin-right: 25px;
         }
 
-        .contact .li_wrap .text {
+        address .li_wrap .text {
             width: calc(100% - 50px);
-            word-break: break-word;
             color: #fff;
         }
 
@@ -134,31 +139,67 @@
             color: #636363;
         }
 
-        .header {
+        main {
             background: #000000;
             padding: 15px 30px;
             color: #fff;
             height: 200px;
         }
 
-        .header .name {
-            font-size: 52px;
+        main h1 {
+            font-size: 45px;
             text-transform: uppercase;
             font-weight: 700;
-            color: #f73131;
+            color: #ff0000;
         }
 
-        .header .about {
+        main .about {
             margin-top: 20px;
-            line-height: 26px;
+            line-height: 25px;
         }
 
         .right_inner {
             padding: 30px;
-            color: #292b2f;
+            color: #000000;
         }
 
-        .right_inner .education {
+        footer {
+            background: #ffffff;
+            height: 110px;
+            padding: 0;
+            border-top: 4px solid rgb(0, 0, 0);
+        }
+
+        footer .date2021 {
+            margin-left: 270px;
+            font-size: 25px;
+        }
+
+
+        footer .log img {
+            padding: 10px 25px;
+            width: 150px;
+        }
+
+        footer .foot {
+            display: flex;
+        }
+
+        footer .foot address {
+            width: calc(100% - 150px);
+            margin-top: 10px;
+        }
+
+        footer .foot address a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 25px;
+            padding-left: 360px;
+            font-weight: 900;
+
+        }
+
+        .right_inner .education h2 {
             margin-top: 30px;
         }
 
@@ -213,15 +254,15 @@
 <body>
     <div class="wrapper">
         <div class="resume">
-            <div class="left">
+            <header>
                 <div class="img_holder">
                     <img src="fKClroH0aEU.jpg" alt="picture">
                 </div>
                 <div class="contact_wrap pb">
-                    <div class="title">
+                    <h2>
                         Contact
-                    </div>
-                    <div class="contact">
+                    </h2>
+                    <address>
                         <ul>
                             <li>
                                 <div class="li_wrap">
@@ -242,12 +283,12 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </address>
                 </div>
                 <div class="skills_wrap pb">
-                    <div class="title">
+                    <h2>
                         Skills
-                    </div>
+                    </h2>
                     <div class="skills">
                         <ul>
                             <li>
@@ -278,13 +319,13 @@
                     </div>
                 </div>
 
-            </div>
+            </header>
             <div class="right">
-                <div class="header">
+                <main>
 
-                    <div class="name">
+                    <h1>
                         Vladislav Akulich
-                    </div>
+                    </h1>
 
 
                     <div class="about">
@@ -292,14 +333,14 @@
                         same time student of BSUIR and I
                         really want to know HTML, CSS and Javascript.
                     </div>
-                </div>
+                </main>
                 <div class="right_inner">
 
                     <div class="education">
-                        <div class="title">
+                        <h2>
                             Education
-                        </div>
-                        <div class="education_wrap">
+                        </h2>
+                        <div class="spis">
                             <ul>
                                 <li>
                                     <div class="li_wrap">
@@ -345,7 +386,24 @@
                             </ul>
                         </div>
                     </div>
+
                 </div>
+                <footer>
+                    <div class="foot">
+                        <div class="log">
+                            <a href="https://rs.school/js/">
+                                <img src="https://rs.school/images/rs_school_js.svg" alt="logotip" />
+                            </a>
+
+                        </div>
+                        <address>
+                            <a href="https://github.com/unfunuk"> GIT</a>
+                        </address>
+                    </div>
+                    <div class="date2021">
+                        2021
+                    </div>
+                </footer>
             </div>
         </div>
     </div>
