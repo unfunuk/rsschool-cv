@@ -1,5 +1,4 @@
-1. 
-## **Vladislav Akulich**
+1. ## **Vladislav Akulich**
 2.  INFO  
 [VK](https://vk.com/yt_arvx)  
 Phone number: +375445876563  
