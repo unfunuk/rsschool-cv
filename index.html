@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CV</title>
+    <style>
+        @font-face {
+            font-family: 'Akaya Kanadaka', cursive;
+            src: url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: 'Akaya Kanadaka', cursive;
+        }
+
+        body {
+            background: linear-gradient(to right, #ffffff, #000000);
+        }
+
+        .resume {
+
+            width: 850px;
+            background: rgb(252, 252, 252);
+            margin: auto;
+            display: flex;
+        }
+
+        header {
+
+            background: #000000;
+            width: 270px;
+            padding: 5px 20px;
+        }
+
+        .right {
+
+            width: calc(100% - 270px);
+        }
+
+        header .img_holder {
+            text-align: center;
+            padding: 20px 5px;
+        }
+
+        header .img_holder img {
+            width: 170px;
+            border-radius: 20px;
+        }
+
+        .pb {
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            padding-bottom: 10px;
+            color: #ff0000;
+            position: relative;
+            text-align: right;
+            margin-bottom: 15px;
+        }
+
+        h2:before {
+            content: "";
+            position: absolute;
+            top: 40px;
+            right: 0;
+            width: 70px;
+            height: 3px;
+            background: #ff0000;
+        }
+
+        header .icon {
+            font-size: 20px;
+        }
+
+        header .text {
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+
+        address .li_wrap {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        address .li_wrap .icon {
+            width: 25px;
+            height: 25px;
+            background: #fff;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            margin-right: 25px;
+        }
+
+        address .li_wrap .text {
+            width: calc(100% - 50px);
+            color: #fff;
+        }
+
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .skills .li_wrap {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #fff;
+        }
+
+        .skills .li_wrap .text {
+            color: #fff;
+        }
+
+        .skills .li_wrap:hover {
+            background: #fff;
+        }
+
+        .skills .li_wrap:hover .icon,
+        .skills .li_wrap:hover .text {
+            color: #636363;
+        }
+
+        main {
+            background: #000000;
+            padding: 15px 30px;
+            color: #fff;
+            height: 200px;
+        }
+
+        main h1 {
+            font-size: 45px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #ff0000;
+        }
+
+        main .about {
+            margin-top: 20px;
+            line-height: 25px;
+        }
+
+        .right_inner {
+            padding: 30px;
+            color: #000000;
+        }
+
+        footer {
+            background: #ffffff;
+            height: 110px;
+            padding: 0;
+            border-top: 4px solid rgb(0, 0, 0);
+        }
+
+        footer .date2021 {
+            margin-left: 270px;
+            font-size: 25px;
+        }
+
+
+        footer .log img {
+            padding: 10px 25px;
+            width: 150px;
+        }
+
+        footer .foot {
+            display: flex;
+        }
+
+        footer .foot .git {
+            width: calc(100% - 150px);
+            margin-top: 10px;
+        }
+
+        footer .foot .git a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 25px;
+            padding-left: 360px;
+            font-weight: 900;
+
+        }
+
+        .right_inner .education h2 {
+            margin-top: -5px;
+        }
+
+
+        .right_inner .li_wrap {
+            display: flex;
+            margin-bottom: 25px;
+        }
+
+        .right_inner .li_wrap .date {
+            width: 120px;
+            color: #000000;
+        }
+
+        .right_inner .li_wrap .info {
+            width: calc(100% - 120px);
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .right_inner .li_wrap .info_title {
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #000000;
+        }
+
+        .right_inner .li_wrap .info_com {
+            font-weight: 300;
+            font-size: 14px;
+            margin-top: 3px;
+        }
+
+        .right_inner .li_wrap .info_cont {
+            margin-top: 15px;
+        }
+
+
+
+        .right_inner .li_wrap .info:after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 8px;
+            width: 3px;
+            height: 100%;
+            background: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="resume">
+            <header>
+                <div class="img_holder">
+                    <img src="fKClroH0aEU.jpg" alt="picture">
+                </div>
+                <div class="contact_wrap pb">
+                    <h2>
+                        Contact
+                    </h2>
+                    <address>
+                        <ul>
+                            <li>
+                                <div class="li_wrap">
+                                    <div class="icon"></div>
+                                    <div class="text">+375445876563</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li_wrap">
+                                    <div class="icon"></div>
+                                    <div class="text">a.s.s.t.e.r.i.x.0@gmail.com</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li_wrap">
+                                    <div class="icon"></div>
+                                    <div class="text">Minsk, Platonov Street 33</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="skills_wrap pb">
+                    <h2>
+                        Skills
+                    </h2>
+                    <div class="skills">
+                        <ul>
+                            <li>
+                                <div class="li_wrap">
+                                    <div class="icon"><i class="fab fa-html5"></i></div>
+                                    <div class="text">CSS</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li_wrap">
+                                    <div class="icon"><i class="fab fa-css3-alt"></i></div>
+                                    <div class="text">HTML</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li_wrap">
+                                    <div class="icon"><i class="fab fa-js"></i></div>
+                                    <div class="text">Javascript</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li_wrap">
+                                    <div class="icon"><i class="fab fa-react"></i></div>
+                                    <div class="text">C#</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </header>
+            <div class="right">
+                <main>
+
+                    <h1>
+                        Vladislav Akulich
+                    </h1>
+
+
+                    <div class="about">
+                        Hi!My name is Vladislav Akulich. I am 19 years old and now I am a student of rs-school. At the
+                        same time student of BSUIR and I
+                        really want to know HTML, CSS and Javascript.
+                    </div>
+                </main>
+                <div class="right_inner">
+
+                    <div class="education">
+                        <h2>
+                            Education
+                        </h2>
+                        <section>
+                            <ul>
+                                <li>
+                                    <div class="li_wrap">
+                                        <div class="date">
+                                            2009 - 2019
+                                        </div>
+                                        <div class="info">
+                                            <p class="info_title">
+                                                School
+                                            </p>
+                                            <p class="info_com">
+                                                Bobruisk Gymnasium №3
+                                            </p>
+                                            <p class="info_cont">
+                                                I finished 11 classes at the Bobruisk gymnasium №3 with an average score
+                                                of
+                                                9.6. There I began to learn how to create websites in a computer science
+                                                lesson. I think I got a good basis for further learning.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li_wrap">
+                                        <div class="date">
+                                            2019-2021
+                                        </div>
+                                        <div class="info">
+                                            <p class="info_title">
+                                                University
+                                            </p>
+                                            <p class="info_com">
+                                                BSUIR
+                                            </p>
+                                            <p class="info_cont">
+                                                Since 2019 I am studying at the State University of Informatics and
+                                                Radioelectroniks.<br> Faculty: Faculty of Information Technology and
+                                                Management.<br> Specialty: Automated information processing systems.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="languge">
+                                        My English level is A2
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+
+                </div>
+                <footer>
+                    <div class="foot">
+                        <div class="log">
+                            <a href="https://rs.school/js/">
+                                <img src="https://rs.school/images/rs_school_js.svg" alt="logotip" />
+                            </a>
+
+                        </div>
+                        <div class="git">
+                            <a href="https://github.com/unfunuk"> GIT</a>
+                        </div>
+                    </div>
+                    <div class="date2021">
+                        2021
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
